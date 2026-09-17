@@ -29,6 +29,164 @@
     href="styles.css"
   >
 
+  <!-- ESTILOS EXCLUSIVOS DA NOVA SEÇÃO -->
+
+  <style>
+
+    .precision-differential{
+      max-width:1160px;
+      margin:0 auto;
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      min-height:520px;
+      background:#f4f1eb;
+    }
+
+    .precision-differential-copy{
+      padding:75px 60px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+    }
+
+    .precision-differential-copy h2{
+      font:500 clamp(42px,5vw,68px)/.95 "Playfair Display",serif;
+      margin:0 0 28px;
+      letter-spacing:-.025em;
+    }
+
+    .precision-differential-copy h2 em{
+      color:#f46a1a;
+      font-style:italic;
+    }
+
+    .precision-differential-copy p:not(.eyebrow){
+      color:#555;
+      font-size:14px;
+      max-width:500px;
+    }
+
+    .precision-differential-image{
+      position:relative;
+      min-height:520px;
+      overflow:hidden;
+      background:#111;
+    }
+
+    .precision-differential-image img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+
+    .precision-differential-image::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(
+        90deg,
+        rgba(0,0,0,.15),
+        rgba(0,0,0,.05)
+      );
+      pointer-events:none;
+    }
+
+    .precision-differential-badge{
+      position:absolute;
+      z-index:2;
+      right:25px;
+      top:25px;
+      max-width:190px;
+      padding:20px;
+      background:rgba(17,17,17,.82);
+      color:#fff;
+      border-left:3px solid #f46a1a;
+    }
+
+    .precision-differential-badge strong{
+      display:block;
+      color:#f46a1a;
+      font:500 24px/1.05 "Playfair Display",serif;
+      margin-bottom:8px;
+    }
+
+    .precision-differential-badge span{
+      font-size:9px;
+      line-height:1.5;
+      letter-spacing:.1em;
+      text-transform:uppercase;
+    }
+
+    .precision-features{
+      max-width:1160px;
+      margin:0 auto;
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      border-top:1px solid #ddd;
+      background:#fff;
+    }
+
+    .precision-feature{
+      padding:32px;
+      border-right:1px solid #ddd;
+    }
+
+    .precision-feature:last-child{
+      border-right:none;
+    }
+
+    .precision-feature-number{
+      display:block;
+      color:#f46a1a;
+      font-size:10px;
+      font-weight:700;
+      letter-spacing:.15em;
+      margin-bottom:20px;
+    }
+
+    .precision-feature h3{
+      font:500 27px/1.05 "Playfair Display",serif;
+      margin:0 0 12px;
+    }
+
+    .precision-feature p{
+      color:#666;
+      font-size:12px;
+      margin:0;
+    }
+
+    @media(max-width:780px){
+
+      .precision-differential{
+        grid-template-columns:1fr;
+      }
+
+      .precision-differential-copy{
+        padding:60px 25px;
+      }
+
+      .precision-differential-image{
+        min-height:350px;
+      }
+
+      .precision-features{
+        grid-template-columns:1fr;
+      }
+
+      .precision-feature{
+        border-right:none;
+        border-bottom:1px solid #ddd;
+      }
+
+      .precision-feature:last-child{
+        border-bottom:none;
+      }
+
+    }
+
+  </style>
+
 </head>
 
 
@@ -265,7 +423,6 @@
         </article>
 
 
-
         <article>
 
           <span>
@@ -284,7 +441,6 @@
         </article>
 
 
-
         <article>
 
           <span>
@@ -301,7 +457,6 @@
           </p>
 
         </article>
-
 
 
         <article>
@@ -403,6 +558,148 @@
 
 
 
+    <!-- NOVO DIFERENCIAL: LABORATÓRIO -->
+
+    <section class="section">
+
+      <div class="precision-differential">
+
+
+        <div class="precision-differential-copy">
+
+          <p class="eyebrow">
+            NOSSO DIFERENCIAL
+          </p>
+
+
+          <h2>
+
+            Laboratório próprio.
+            <br>
+
+            <em>Precisão em cada detalhe.</em>
+
+          </h2>
+
+
+          <p>
+
+            Contamos com laboratório próprio e
+            profissionais altamente capacitados
+            para entregar seus óculos com precisão,
+            qualidade e cuidado.
+
+          </p>
+
+
+          <p>
+
+            Da medição à montagem, cada etapa recebe
+            atenção para que o resultado final esteja
+            à altura das suas necessidades visuais.
+
+          </p>
+
+        </div>
+
+
+
+        <div class="precision-differential-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1581591524425-c7e0978865fc?auto=format&fit=crop&w=1200&q=85"
+            alt="Profissional trabalhando em equipamento de precisão"
+          >
+
+
+          <div class="precision-differential-badge">
+
+            <strong>
+              TECNOLOGIA
+              <br>
+              + EXPERIÊNCIA
+            </strong>
+
+            <span>
+              Óculos produzidos
+              com precisão
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <div class="precision-features">
+
+
+        <article class="precision-feature">
+
+          <span class="precision-feature-number">
+            01
+          </span>
+
+          <h3>
+            Profissionais capacitados
+          </h3>
+
+          <p>
+            Uma equipe preparada para cuidar
+            de cada etapa com conhecimento,
+            atenção e precisão.
+          </p>
+
+        </article>
+
+
+
+        <article class="precision-feature">
+
+          <span class="precision-feature-number">
+            02
+          </span>
+
+          <h3>
+            Laboratório próprio
+          </h3>
+
+          <p>
+            Mais controle sobre o processo,
+            qualidade e atenção aos detalhes
+            na montagem dos seus óculos.
+          </p>
+
+        </article>
+
+
+
+        <article class="precision-feature">
+
+          <span class="precision-feature-number">
+            03
+          </span>
+
+          <h3>
+            Tecnologia + experiência
+          </h3>
+
+          <p>
+            Recursos tecnológicos aliados
+            à experiência profissional para
+            entregar precisão em cada detalhe.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+
     <!-- FRASE -->
 
     <section class="orange-banner">
@@ -468,7 +765,7 @@
       <div class="stores">
 
 
-        <!-- SÃO LOURENÇO — CENTRO -->
+        <!-- CENTRO -->
 
         <article class="store">
 
@@ -513,7 +810,7 @@
 
 
 
-        <!-- SÃO LOURENÇO — FEDERAL -->
+        <!-- FEDERAL -->
 
         <article class="store">
 
@@ -853,7 +1150,6 @@
 
         </article>
 
-
       </div>
 
     </section>
@@ -866,7 +1162,6 @@
       id="contato"
       class="contact"
     >
-
 
       <p class="eyebrow">
         04 — CONTATO
