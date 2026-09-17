@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap");
 
-
 :root{
   --orange:#f46a1a;
   --black:#111;
@@ -10,16 +9,13 @@
   --max:1160px;
 }
 
-
 *{
   box-sizing:border-box;
 }
 
-
 html{
   scroll-behavior:smooth;
 }
-
 
 body{
   margin:0;
@@ -29,13 +25,14 @@ body{
   line-height:1.65;
 }
 
-
 a{
   color:inherit;
 }
 
 
-/* CABEÇALHO */
+/* =========================
+   CABEÇALHO
+========================= */
 
 .header{
   max-width:var(--max);
@@ -47,7 +44,6 @@ a{
   border-bottom:2px solid #111;
 }
 
-
 .brand img{
   display:block;
   width:190px;
@@ -55,12 +51,10 @@ a{
   object-fit:contain;
 }
 
-
 nav{
   display:flex;
   gap:28px;
 }
-
 
 nav a{
   text-decoration:none;
@@ -70,13 +64,14 @@ nav a{
   letter-spacing:.12em;
 }
 
-
 nav a:hover{
   color:var(--orange);
 }
 
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 
 .hero{
   max-width:var(--max);
@@ -89,7 +84,6 @@ nav a:hover{
   align-items:center;
 }
 
-
 .eyebrow{
   font-size:10px;
   letter-spacing:.22em;
@@ -99,13 +93,11 @@ nav a:hover{
   text-transform:uppercase;
 }
 
-
 .hero h1{
   font:500 clamp(55px,8vw,105px)/.92 "Playfair Display",serif;
   letter-spacing:-.035em;
   margin:0 0 30px;
 }
-
 
 .hero h1 em,
 h2 em{
@@ -113,13 +105,11 @@ h2 em{
   font-style:italic;
 }
 
-
 .hero-copy>p:not(.eyebrow){
   max-width:560px;
   color:#4f4f4f;
   font-size:16px;
 }
-
 
 .actions{
   display:flex;
@@ -127,7 +117,6 @@ h2 em{
   gap:25px;
   margin-top:30px;
 }
-
 
 .button{
   display:inline-block;
@@ -142,12 +131,10 @@ h2 em{
   text-transform:uppercase;
 }
 
-
 .button:hover{
   background:var(--black);
   border-color:var(--black);
 }
-
 
 .text-link{
   text-decoration:none;
@@ -155,11 +142,9 @@ h2 em{
   font-weight:600;
 }
 
-
 .text-link:hover{
   color:var(--orange);
 }
-
 
 .hero-points{
   display:flex;
@@ -167,7 +152,6 @@ h2 em{
   margin-top:45px;
   flex-wrap:wrap;
 }
-
 
 .hero-points span{
   font-size:9px;
@@ -178,7 +162,9 @@ h2 em{
 }
 
 
-/* IMAGEM DO HERO */
+/* =========================
+   IMAGEM DO HERO
+========================= */
 
 .hero-visual{
   height:400px;
@@ -190,7 +176,6 @@ h2 em{
   justify-content:center;
 }
 
-
 .hero-visual img{
   position:absolute;
   inset:0;
@@ -199,7 +184,6 @@ h2 em{
   object-fit:cover;
   display:block;
 }
-
 
 .hero-overlay{
   position:absolute;
@@ -218,19 +202,16 @@ h2 em{
   color:#fff;
 }
 
-
 .hero-overlay span{
   font-size:11px;
   letter-spacing:.3em;
   font-weight:700;
 }
 
-
 .hero-overlay strong{
   font:600 75px/1 "Playfair Display",serif;
   color:var(--orange);
 }
-
 
 .hero-overlay small{
   max-width:190px;
@@ -240,7 +221,9 @@ h2 em{
 }
 
 
-/* SEÇÕES */
+/* =========================
+   SEÇÕES
+========================= */
 
 .section{
   max-width:var(--max);
@@ -249,13 +232,11 @@ h2 em{
   border-top:1px solid var(--line);
 }
 
-
 .intro{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:80px;
 }
-
 
 .section h2,
 .contact h2{
@@ -263,14 +244,15 @@ h2 em{
   margin:0;
 }
 
-
 .copy{
   max-width:540px;
   color:#5b5b5b;
 }
 
 
-/* CARDS */
+/* =========================
+   SERVIÇOS
+========================= */
 
 .cards{
   display:grid;
@@ -280,13 +262,11 @@ h2 em{
   margin-top:40px;
 }
 
-
 .cards article{
   background:#fff;
   padding:32px;
   min-height:260px;
 }
-
 
 .cards span{
   font-size:10px;
@@ -294,12 +274,10 @@ h2 em{
   font-weight:700;
 }
 
-
 .cards h3{
   font:500 30px/1.05 "Playfair Display",serif;
   margin:48px 0 12px;
 }
-
 
 .cards p{
   font-size:12px;
@@ -307,7 +285,9 @@ h2 em{
 }
 
 
-/* TECNOLOGIA */
+/* =========================
+   TECNOLOGIA
+========================= */
 
 .technology{
   max-width:var(--max);
@@ -317,13 +297,11 @@ h2 em{
   min-height:500px;
 }
 
-
 .technology-image{
   position:relative;
   overflow:hidden;
   min-height:500px;
 }
-
 
 .technology-image img{
   width:100%;
@@ -332,19 +310,16 @@ h2 em{
   display:block;
 }
 
-
 .technology-copy{
   padding:75px 65px;
   background:#111;
   color:#fff;
 }
 
-
 .technology-copy h2{
   font:500 clamp(40px,5vw,65px)/.95 "Playfair Display",serif;
   margin:0 0 30px;
 }
-
 
 .technology-copy p:not(.eyebrow){
   color:#ccc;
@@ -352,14 +327,12 @@ h2 em{
   font-size:13px;
 }
 
-
 .technology-points{
   display:flex;
   flex-wrap:wrap;
   gap:12px;
   margin-top:35px;
 }
-
 
 .technology-points span{
   border:1px solid #555;
@@ -370,7 +343,137 @@ h2 em{
 }
 
 
-/* BANNER */
+/* =========================
+   LABORATÓRIO / DIFERENCIAL
+========================= */
+
+.precision-differential{
+  max-width:1160px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  min-height:520px;
+  background:#f4f1eb;
+}
+
+.precision-differential-copy{
+  padding:75px 60px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.precision-differential-copy h2{
+  font:500 clamp(42px,5vw,68px)/.95 "Playfair Display",serif;
+  margin:0 0 28px;
+  letter-spacing:-.025em;
+}
+
+.precision-differential-copy h2 em{
+  color:var(--orange);
+  font-style:italic;
+}
+
+.precision-differential-copy p:not(.eyebrow){
+  color:#555;
+  font-size:14px;
+  max-width:500px;
+}
+
+.precision-differential-image{
+  position:relative;
+  min-height:520px;
+  overflow:hidden;
+  background:#111;
+}
+
+.precision-differential-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.precision-differential-image::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    90deg,
+    rgba(0,0,0,.15),
+    rgba(0,0,0,.05)
+  );
+  pointer-events:none;
+}
+
+.precision-differential-badge{
+  position:absolute;
+  z-index:2;
+  right:25px;
+  top:25px;
+  max-width:190px;
+  padding:20px;
+  background:rgba(17,17,17,.82);
+  color:#fff;
+  border-left:3px solid var(--orange);
+}
+
+.precision-differential-badge strong{
+  display:block;
+  color:var(--orange);
+  font:500 24px/1.05 "Playfair Display",serif;
+  margin-bottom:8px;
+}
+
+.precision-differential-badge span{
+  font-size:9px;
+  line-height:1.5;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
+
+.precision-features{
+  max-width:1160px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  border-top:1px solid #ddd;
+  background:#fff;
+}
+
+.precision-feature{
+  padding:32px;
+  border-right:1px solid #ddd;
+}
+
+.precision-feature:last-child{
+  border-right:none;
+}
+
+.precision-feature-number{
+  display:block;
+  color:var(--orange);
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.15em;
+  margin-bottom:20px;
+}
+
+.precision-feature h3{
+  font:500 27px/1.05 "Playfair Display",serif;
+  margin:0 0 12px;
+}
+
+.precision-feature p{
+  color:#666;
+  font-size:12px;
+  margin:0;
+}
+
+
+/* =========================
+   BANNER
+========================= */
 
 .orange-banner{
   background:var(--orange);
@@ -379,19 +482,19 @@ h2 em{
   padding:105px 25px;
 }
 
-
 .orange-banner p{
   font:500 clamp(38px,6vw,70px)/.92 "Playfair Display",serif;
   margin:0;
 }
-
 
 .orange-banner strong{
   color:#111;
 }
 
 
-/* LOJAS */
+/* =========================
+   LOJAS
+========================= */
 
 .section-head{
   display:flex;
@@ -399,7 +502,6 @@ h2 em{
   align-items:end;
   gap:50px;
 }
-
 
 .stores{
   display:grid;
@@ -409,12 +511,10 @@ h2 em{
   margin-top:42px;
 }
 
-
 .store{
   background:#fff;
   padding:38px;
 }
-
 
 .store .city{
   font-size:9px;
@@ -423,18 +523,15 @@ h2 em{
   font-weight:700;
 }
 
-
 .store h3{
   font:500 38px/1.05 "Playfair Display",serif;
   margin:25px 0 15px;
 }
 
-
 .store p{
   font-size:13px;
   color:var(--gray);
 }
-
 
 .button.small{
   padding:10px 15px;
@@ -442,7 +539,9 @@ h2 em{
 }
 
 
-/* MAPA */
+/* =========================
+   MAPA
+========================= */
 
 .map-panel{
   background:#111;
@@ -452,7 +551,6 @@ h2 em{
   position:relative;
   overflow:hidden;
 }
-
 
 .map-panel::before{
   content:"";
@@ -465,7 +563,6 @@ h2 em{
   top:-100px;
 }
 
-
 .map-panel::after{
   content:"";
   position:absolute;
@@ -477,25 +574,21 @@ h2 em{
   top:-40px;
 }
 
-
 .map-panel-content{
   position:relative;
   z-index:2;
 }
-
 
 .map-panel h3{
   font:500 42px/1.02 "Playfair Display",serif;
   margin:0 0 22px;
 }
 
-
 .map-panel p:not(.eyebrow){
   color:#ccc;
   font-size:13px;
   max-width:390px;
 }
-
 
 .map-cities{
   display:flex;
@@ -505,7 +598,6 @@ h2 em{
   max-width:420px;
 }
 
-
 .map-cities span{
   border:1px solid #444;
   padding:8px 10px;
@@ -513,7 +605,6 @@ h2 em{
   letter-spacing:.08em;
   text-transform:uppercase;
 }
-
 
 .map-button{
   display:inline-block;
@@ -528,14 +619,15 @@ h2 em{
   text-transform:uppercase;
 }
 
-
 .map-button:hover{
   background:#fff;
   color:#111;
 }
 
 
-/* CONTATO */
+/* =========================
+   CONTATO
+========================= */
 
 .contact{
   background:#111;
@@ -543,11 +635,9 @@ h2 em{
   padding:105px max(28px,calc((100% - 1160px)/2));
 }
 
-
 .contact .eyebrow{
   color:var(--orange);
 }
-
 
 .contact p:not(.eyebrow){
   max-width:500px;
@@ -555,7 +645,9 @@ h2 em{
 }
 
 
-/* RODAPÉ */
+/* =========================
+   RODAPÉ
+========================= */
 
 footer{
   max-width:var(--max);
@@ -571,18 +663,15 @@ footer{
   text-transform:uppercase;
 }
 
-
 footer img{
   width:135px;
 }
-
 
 .social-links{
   display:flex;
   gap:18px;
   align-items:center;
 }
-
 
 .social-links a{
   text-decoration:none;
@@ -592,13 +681,14 @@ footer img{
   text-transform:uppercase;
 }
 
-
 .social-links a:hover{
   color:var(--orange);
 }
 
 
-/* RESPONSIVO */
+/* =========================
+   CELULAR
+========================= */
 
 @media(max-width:780px){
 
@@ -607,11 +697,9 @@ footer img{
     gap:15px;
   }
 
-
   .brand img{
     width:145px;
   }
-
 
   nav{
     gap:10px;
@@ -619,11 +707,9 @@ footer img{
     justify-content:flex-end;
   }
 
-
   nav a{
     font-size:7px;
   }
-
 
   .hero{
     grid-template-columns:1fr;
@@ -631,31 +717,21 @@ footer img{
     gap:45px;
   }
 
-
   .hero-visual{
     height:300px;
   }
-
-
-  .hero-card strong{
-    font-size:65px;
-  }
-
 
   .hero-overlay{
     padding:30px;
   }
 
-
   .hero-overlay strong{
     font-size:60px;
   }
 
-
   .section{
     padding:75px 20px;
   }
-
 
   .intro,
   .section-head{
@@ -664,48 +740,64 @@ footer img{
     gap:30px;
   }
 
-
   .cards,
   .stores{
     grid-template-columns:1fr;
   }
 
-
   .cards article{
     min-height:0;
   }
-
 
   .technology{
     grid-template-columns:1fr;
   }
 
-
   .technology-image{
     min-height:350px;
   }
-
 
   .technology-copy{
     padding:60px 25px;
   }
 
+  .precision-differential{
+    grid-template-columns:1fr;
+  }
+
+  .precision-differential-copy{
+    padding:60px 25px;
+  }
+
+  .precision-differential-image{
+    min-height:350px;
+  }
+
+  .precision-features{
+    grid-template-columns:1fr;
+  }
+
+  .precision-feature{
+    border-right:none;
+    border-bottom:1px solid #ddd;
+  }
+
+  .precision-feature:last-child{
+    border-bottom:none;
+  }
 
   .actions{
     flex-direction:column;
     align-items:flex-start;
   }
 
-
   .map-panel{
     min-height:380px;
   }
 
-
   .contact{
     padding:80px 20px;
   }
-
 
   footer{
     padding:24px 20px 35px;
